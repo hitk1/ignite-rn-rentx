@@ -18,7 +18,7 @@ export default function App() {
     Archivo_600SemiBold
   })
 
-  if (isFontsLoaded)
+  if (!isFontsLoaded)
     return <AppLoading />
 
   return (
