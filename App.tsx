@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components'
 import appTheme from './src/styles/theme'
 
 import { Home } from './src/screens/Home'
+import { CarDetails } from './src/screens/CarDetails'
 
 export default function App() {
 
@@ -23,7 +24,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={appTheme}>
-      <Home />
+      {/* <Home /> */}
+      <CarDetails />
     </ThemeProvider>
   );
 }

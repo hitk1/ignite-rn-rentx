@@ -1,5 +1,5 @@
 import React from 'react'
-import { StatusBar } from 'react-native'
+import { FlatList, StatusBar } from 'react-native'
 import { RFValue } from 'react-native-responsive-fontsize'
 
 import { Car } from '../../components/Car'
@@ -7,6 +7,7 @@ import { Car } from '../../components/Car'
 import Logo from '../../assets/logo.svg'
 
 import {
+    Carlist,
     Container,
     Header,
     HeaderContent,
@@ -42,9 +43,20 @@ export const Home = () => {
                     </TotalCars>
                 </HeaderContent>
             </Header>
-            <Car
-                data={cardData}
+            {/* <FlatList
+                data={[1, 2, 3]}
+                keyExtractor={item => String(item)}
+                renderItem={({ item }) => <Car data={cardData} />}
+            /> */}
+            <Carlist
+                data={[1, 2, 3, 4] as any}
+                keyExtractor={item => String(item)}
+                renderItem={({ item }) =>
+                    <Car
+                        data={cardData}
+                    />
+                }
             />
-        </Container>
+        </Container >
     )
 }
