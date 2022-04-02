@@ -10,6 +10,7 @@ import PeopleSvg from '../../assets/people.svg';
 import Backbutton from '../../components/Backbutton';
 import { ImageSlider } from '../../components/ImageSlider';
 import { Acessory } from '../../components/Acessory';
+import { Button } from '../../components/Button';
 
 
 import {
@@ -26,6 +27,7 @@ import {
     Price,
     About,
     Acessories,
+    Footer,
 } from './styles';
 
 export const CarDetails = () => {
@@ -64,6 +66,12 @@ export const CarDetails = () => {
                 </Acessories>
                 <About>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque magnam sapiente libero aliquam esse nobis, ad nisi magni nam autem veritatis optio fugiat porro soluta repellendus. Esse, architecto expedita!</About>
             </Content>
+            <Footer>
+                <Button
+                    title='Some title'
+                    onPress={() => { }}
+                />
+            </Footer>
         </Container>
     );
 }
