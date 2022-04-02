@@ -6,7 +6,16 @@ import { ImageSlider } from '../../components/ImageSlider';
 import {
     Container,
     Header,
-    CarImages
+    CarImages,
+    Content,
+    Details,
+    Description,
+    Brand,
+    Name,
+    Rent,
+    Period,
+    Price,
+    About,
 } from './styles';
 
 export const CarDetails = () => {
@@ -23,6 +32,20 @@ export const CarDetails = () => {
                     imagesUrl={['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTZst6cl173Ea53YrCWvrZrioLplVLDVqB8uUGxP_SG3IkUrn2EK2HLYa53Q0O2MWALe8&usqp=CAU']}
                 />
             </CarImages>
+
+            <Content>
+                <Details>
+                    <Description>
+                        <Brand>Lamborghini</Brand>
+                        <Name>Huracan</Name>
+                    </Description>
+                    <Rent>
+                        <Period>Ao dia</Period>
+                        <Price>R$ 580</Price>
+                    </Rent>
+                </Details>
+                <About>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque magnam sapiente libero aliquam esse nobis, ad nisi magni nam autem veritatis optio fugiat porro soluta repellendus. Esse, architecto expedita!</About>
+            </Content>
         </Container>
     );
 }
