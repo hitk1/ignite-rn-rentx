@@ -1,4 +1,5 @@
 import React from 'react'
+import { StatusBar } from 'react-native'
 import { RectButtonProps } from 'react-native-gesture-handler'
 
 import {
@@ -19,6 +20,11 @@ export const ConfirmButton = ({
         <Container
             {...restProps}
         >
+            <StatusBar
+                barStyle="light-content"
+                translucent
+                backgroundColor="transparent"
+            />
             <Title>{title}</Title>
         </Container>
     )
