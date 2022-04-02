@@ -6,6 +6,8 @@ import ArrowSvg from '../../assets/arrow.svg'
 
 import Backbutton from '../../components/Backbutton'
 import { Button } from '../../components/Button'
+import { Calendar } from '../../components/Calendar'
+
 
 import {
     Container,
@@ -54,7 +56,7 @@ export const Scheduling = () => {
                 </RentalPeriod>
             </Header>
             <Content>
-
+                <Calendar />
             </Content>
 
             <Footer>
